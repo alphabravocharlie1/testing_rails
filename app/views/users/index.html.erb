@@ -1,0 +1,10 @@
+<%= form_tag(root_path, :method => "get") do %>
+  <%= text_field_tag :search, params[:search], placeholder: "enter user name" %>
+  <%= submit_tag "Search", :name => nil %>
+<% end %>
+<h3>Data by Elastic Search</h3>
+<% @users.to_a.each do |a| %>
+<p><%= a.name %>
+<%= a.email %></p>
+<% end %>
+<img src="<%= asset_path('P7A_6859.jpg') %>" width="500" height="300">

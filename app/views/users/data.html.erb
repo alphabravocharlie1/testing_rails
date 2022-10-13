@@ -1,0 +1,9 @@
+<%= form_tag(data_users_path, :method => "get") do %>
+  <%= text_field_tag :search, params[:search], placeholder: "enter user name" %>
+  <%= submit_tag "Search", :name => nil %>
+<% end %>
+<h3>Data by Database</h3>
+<% @users.each do |a| %>
+<p><%= a.name %>
+<%= a.email %></p>
+<% end %>
