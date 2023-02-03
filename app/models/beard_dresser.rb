@@ -1,0 +1,2 @@
+class BeardDresser < Expert
+end

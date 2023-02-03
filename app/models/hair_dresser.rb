@@ -1,0 +1,2 @@
+class HairDresser < Expert
+end
